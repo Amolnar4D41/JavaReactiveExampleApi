@@ -20,6 +20,6 @@ public class HelloWorldIntegrationTest {
                 .exchange()
                 .expectStatus().isOk()
                 .expectBody(String.class)
-                .isEqualTo("Hello World!");
+                .isEqualTo("Value was: book");
     }
 }
