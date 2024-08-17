@@ -14,6 +14,8 @@ import org.springframework.data.relational.core.mapping.Table;
 @Table("items")
 public class ItemEntity {
     @Id
-    @NonNull
-    private String name;
+    private int id;
+    private String title;
+    private int amount;
+    private int capacity;
 }
