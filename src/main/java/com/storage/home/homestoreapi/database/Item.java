@@ -1,16 +1,15 @@
 package com.storage.home.homestoreapi.database;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+
+import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.NonNull;
+import org.springframework.data.annotation.Id;
 
-@Entity
-@Table(name = "items")
 @Data
 @NoArgsConstructor
+@AllArgsConstructor
 public class Item {
     @Id
     @NonNull
