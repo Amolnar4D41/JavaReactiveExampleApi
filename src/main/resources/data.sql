@@ -1,3 +1,10 @@
-INSERT INTO items VALUES 'book';
-INSERT INTO items VALUES 'pen';
-INSERT INTO items VALUES 'desk';
+INSERT INTO items(id, title, amount, capacity) VALUES (1, 'Coffee', 1, 2);
+INSERT INTO items(id, title, amount, capacity) VALUES (2, 'Eggs', 8, 20);
+INSERT INTO items(id, title, amount, capacity) VALUES (3, 'Butter', 1, 1);
+INSERT INTO items(id, title, amount, capacity) VALUES (4, 'Vitamins', 1, 1);
+INSERT INTO items(id, title, amount, capacity) VALUES (5, 'Ramen', 4, 6);
+INSERT INTO items(id, title, amount, capacity) VALUES (6, 'Pasta', 2, 2);
+INSERT INTO items(id, title, amount, capacity) VALUES (7, 'Salami', 3, 4);
+INSERT INTO items(id, title, amount, capacity) VALUES (8, 'Fanta', 1, 1);
+INSERT INTO items(id, title, amount, capacity) VALUES (9, 'Bread', 1, 1);
+INSERT INTO items(id, title, amount, capacity) VALUES (10, 'Onion', 2, 3);

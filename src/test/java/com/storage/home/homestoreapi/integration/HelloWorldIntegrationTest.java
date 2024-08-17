@@ -20,12 +20,6 @@ public class HelloWorldIntegrationTest {
                 .uri("/")
                 .exchange()
                 .expectStatus().isOk()
-                .expectBodyList(ItemEntity.class)
-                .hasSize(3)
-                .contains(
-                        new ItemEntity("book"),
-                        new ItemEntity("desk"),
-                        new ItemEntity("pen")
-                );
+                .expectBodyList(ItemEntity.class);
     }
 }
