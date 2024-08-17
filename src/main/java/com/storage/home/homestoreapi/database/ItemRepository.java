@@ -1,13 +1,12 @@
 package com.storage.home.homestoreapi.database;
 
-import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.r2dbc.repository.R2dbcRepository;
 import org.springframework.stereotype.Repository;
-
-import java.util.List;
+import reactor.core.publisher.Flux;
 
 @Repository
-public interface ItemRepository extends JpaRepository<Item, String> {
+public interface ItemRepository extends R2dbcRepository<Item, String> {
 
     @Override
-    List<Item> findAll();
+    Flux<Item> findAll();
 }
