@@ -1,7 +1,7 @@
 package com.storage.home.homestoreapi.api.handler;
 
-import com.storage.home.homestoreapi.database.Item;
-import com.storage.home.homestoreapi.database.ItemRepository;
+import com.storage.home.homestoreapi.repository.entity.ItemEntity;
+import com.storage.home.homestoreapi.repository.ItemRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.stereotype.Component;
@@ -18,6 +18,6 @@ public class HelloWorldHandler {
     public Mono<ServerResponse> sayHello(ServerRequest request) {
         return ServerResponse.ok()
                 .contentType(MediaType.APPLICATION_JSON)
-                .body(itemRepository.findAll(), Item.class);
+                .body(itemRepository.findAll(), ItemEntity.class);
     }
 }
